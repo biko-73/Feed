@@ -1,0 +1,117 @@
+Package: enigma2-plugin-extensions-ajpanel
+Version: v6.0.0
+Depends: enigma2
+Section: base
+Architecture: all
+MD5Sum: 81f4477ab12eb37ab546877ce264e8a0
+Size: 261678
+Filename: enigma2-plugin-extensions-ajpanel_v6.0.0_all.ipk
+Description: Enigma2 Tools
+Maintainer: AMA-Jamry
+Priority: optional
+Source: none
+Homepage: unknown
+OE: enigma2
+License: none
+
+Package: enigma2-plugin-softcams-ncam
+Version: V13.0-r0
+Depends: libcurl4
+Section: 
+Architecture: all
+MD5Sum: 7e9f126d3ba5c943efc3638664cecf2f
+Size: 4949386
+Filename: enigma2-plugin-softcams-ncam_V13.0-r0_all.ipk
+Description: oscam to all images OE2.0 (Patched and Build by linuxsat)
+Maintainer: RAED (rrrr53@hotmail.com)
+Priority: optional
+Source: 
+Homepage: www.tunisia-sat.com
+OE: 
+License: Proprietary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
