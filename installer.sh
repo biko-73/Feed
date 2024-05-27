@@ -2,7 +2,7 @@
 
 #########################################################
 PACKAGE_DIR='DDRSSReader/main'
-MY_FILE="DD_RSS-$version.tar.gz"
+MY_FILE="DD_RSS-0.4.tar.gz"
 version=0.4
 #########################################################
 
