@@ -6,7 +6,7 @@ sleep 3s
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/DD_RSS > /dev/null 2>&1
 
 status='/var/lib/opkg/status'
-package='enigma2-plugin-extensions-DD_RSS'
+package='DD_RSS-0.4.tar.gz'
 
 if grep -q $package $status; then
 opkg remove $package
