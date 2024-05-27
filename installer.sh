@@ -22,7 +22,7 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/DD_RSS > /dev/null 2>&1
 #config
 plugin=DD_RSS
 version=0.4
-url=https://github.com/Belfagor2005/DDRSSReader/raw/main/$plugin-$version.tar.gz
+url=https://github.com/Belfagor2005/DDRSSReader/-/raw/main/$plugin-$version.tar.gz
 
 package=/var/volatile/tmp/$plugin-$version.tar.gz
 
@@ -31,7 +31,7 @@ echo "> Downloading $plugin-$version package  please wait ..."
 sleep 3s
 
 wget -O $package --no-check-certificate $url
-tar -xzf $package -C /
+tar -xf $package -C /
 extract=$?
 rm -rf $package >/dev/null 2>&1
 
