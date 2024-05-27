@@ -22,7 +22,7 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/DD_RSS > /dev/null 2>&1
 #config
 plugin=DD_RSS
 version=0.4
-url=https://github.com/Belfagor2005/DDRSSReader/-/raw/main/$plugin-$version.tar.gz
+url=https://github.com/Belfagor2005/DDRSSReader/raw/main/DD_RSS-0.4.tar.gz
 
 package=/var/volatile/tmp/$plugin-$version.tar.gz
 
