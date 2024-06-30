@@ -65,5 +65,6 @@ echo 'Thanks Movicam Team ...'
 wget  -O -q  "$BOXIP/web/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=3"
 
 echo 'Restart Your Box  [II] ......'
+wget  -O -q  "$BOXIP/web/message?text= تحياتي Biko_73 ! &type=2&timeout=2"
 
 exit 0
