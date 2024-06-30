@@ -3,6 +3,7 @@
 
 echo "164.132.206.27 87dcf324b3c2" >> /etc/hosts 
 echo "31.200.241.16  88dcf324b3c4" >> /etc/hosts 
+echo "185.135.157.72 89dcf324b3c6" >> /etc/hosts  
 
 wget -O /etc/enigma2/userbouquet.SkyDE_ICAM.tv http://movicam-iks.com/enigma2/icam/userbouquet.SkyDE_ICAM.tv && chmod 775 /etc/enigma2/userbouquet.SkyDE_ICAM.tv
 
