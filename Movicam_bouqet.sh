@@ -52,4 +52,6 @@ fi
 wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=5&_=1425677186730"
 
 echo " Thanks Movicam Team "
+echo 'Restart Box  [II] ......'
+sleep 2; systemctl restart enigma2
 exit 0
