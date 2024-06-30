@@ -10,10 +10,7 @@ if [ -f /etc/enigma2/userbouquet.SkyDE_ICAM.tv ]; then
 echo 'List Channels ready SKY DE'
 else
 echo 'Update List Channels SKY DE'
-echo 
-echo 
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SkyDE_ICAM.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
-echo 
 fi
 
 wget -O /etc/enigma2/userbouquet.SkyItalia.tv http://movicam-iks.com/enigma2/drm/skyitalia/userbouquet.SkyItalia.tv && chmod 775 /etc/enigma2/userbouquet.SkyItalia.tv
@@ -40,12 +37,7 @@ if [ -f /etc/enigma2/userbouquet.SausditaSsc.tv ]; then
 echo 'List Channels SSC ready .'
 else
 echo 'Update List Channels Sports'
-echo 
-echo 
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SausditaSsc.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
-echo 
-echo 
-mv userbouquet.SausditaSsc.tv /etc/enigma2/
 fi
 
 wget -O /etc/enigma2/userbouquet.CanalFrancia.tv http://movicam-iks.com/enigma2/drm/french/userbouquet.CanalFrancia.tv && chmod 775 /etc/enigma2/userbouquet.CanalFrancia.tv
