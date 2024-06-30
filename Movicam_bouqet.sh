@@ -49,6 +49,15 @@ echo 'Update List Channels Sports'
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.CanalFrancia.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
 fi
 
+wget -O /etc/enigma2/userbouquet.SkyUk.tv http://movicam-iks.com/enigma2/drm/skyuk/userbouquet.SkyUk.tv && chmod 775 /etc/enigma2/userbouquet.SkyUk.tv
+
+if [ -f /etc/enigma2/userbouquet.SkyUk.tv ]; then
+echo 'List Channels SKY UK ready .'
+else
+echo 'Update List Channels Sports'
+echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SkyUk.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
+fi
+
 wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=5&_=1425677186730"
 
 echo " Thanks Movicam Team "
