@@ -1,5 +1,7 @@
 #!/bin/sh
 #DESCRIPTION=This script Movicam Bouquet
+BOXIP="http://localhost"
+MESSAGES="message*"
 
 echo "164.132.206.27 87dcf324b3c2" >> /etc/hosts 
 echo "31.200.241.16  88dcf324b3c4" >> /etc/hosts 
@@ -59,9 +61,9 @@ echo 'Update List Channels Sports'
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SkyUk.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
 fi
 
-wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=5&_=1425677186730"
+echo 'Thanks Movicam Team ...'
+wget  -O -q  "$BOXIP/web/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=3"
 
-echo " Thanks Movicam Team "
 echo 'Restart Your Box  [II] ......'
 
 exit 0
