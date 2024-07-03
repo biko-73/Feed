@@ -34,7 +34,6 @@ echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SkyUk.tv" ORDER BY 
 
 wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=5&_=1425677186730"
 
-echo " Thanks Movicam Team "
-echo 'Restart Your Box  [II] ......'
+echo " Your Bouqet are updated "
 
-Killall -9 enigma2
+wget -qO - http://127.0.0.1/web/servicelistreload?mode=2
