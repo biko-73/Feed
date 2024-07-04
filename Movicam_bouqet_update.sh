@@ -31,9 +31,9 @@ echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.CanalFrancia.tv" OR
 wget -O /etc/enigma2/userbouquet.SkyUk.tv http://movicam-iks.com/enigma2/drm/skyuk/userbouquet.SkyUk.tv && chmod 775 /etc/enigma2/userbouquet.SkyUk.tv
 sleep 1
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SkyUk.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
+sleep 1
+wget -qO - http://127.0.0.1/web/servicelistreload?mode=2
 
 wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=5&_=1425677186730"
 
 echo " Your Bouqet are updated "
-
-wget -qO - http://127.0.0.1/web/servicelistreload?mode=2
