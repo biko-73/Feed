@@ -41,6 +41,6 @@ echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SkyUk.tv" ORDER BY 
 sleep 1
 wget -qO - http://127.0.0.1/web/servicelistreload?mode=2
 
-wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=5&_=1425677186730"
+wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=10&_=1425677186730"
 
 echo " Your Bouqet are updated "
