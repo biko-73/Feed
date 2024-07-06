@@ -66,7 +66,3 @@ wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم ف�
 	echo '**************************************************'
 	echo ''
 	exit 0
-else
-	echo ''
-	echo "Update Bouqet failed !"
-	exit 1
