@@ -44,25 +44,25 @@ wget -qO - http://127.0.0.1/web/servicelistreload?mode=2
 
 wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=10&_=1425677186730"
 
-	MY_RESULT=$?
+MY_RESULT=$?
 
+echo ''
+echo ''
+if [ $MY_RESULT -eq 0 ]; then
+	echo "   >>>>   Your Bouqet are updated   <<<<"
 	echo ''
-	echo ''
-	if [ $MY_RESULT -eq 0 ]; then
-		echo "   >>>>   Your Bouqet are updated   <<<<"
-		echo ''
-		echo "   >>>>         RESTARING         <<<<"
-		if which systemctl > /dev/null 2>&1; then
-			sleep 2; systemctl restart enigma2
-		else
-			init 4; sleep 4; init 3;
-		fi
+	echo "   >>>>         RESTARING         <<<<"
+	if which systemctl > /dev/null 2>&1; then
+		sleep 2; systemctl restart enigma2
 	else
-		echo "   >>>>   Update Bouqet Failed !   <<<<"
-	fi;
-	echo ''
-	echo '**************************************************'
-	echo '**                   FINISHED                   **'
-	echo '**************************************************'
-	echo ''
-	exit 0
+		init 4; sleep 4; init 3;
+	fi
+else
+	echo "   >>>>   Update Bouqet Failed !   <<<<"
+fi;
+echo ''
+echo '**************************************************'
+echo '**                   FINISHED                   **'
+echo '**************************************************'
+echo ''
+exit 0
