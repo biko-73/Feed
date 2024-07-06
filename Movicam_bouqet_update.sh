@@ -11,6 +11,7 @@ rm -rf /etc/enigma2/userbouquet.MovistarEsp.tv
 rm -rf /etc/enigma2/userbouquet.SausditaSsc.tv
 rm -rf /etc/enigma2/userbouquet.CanalFrancia.tv
 rm -rf /etc/enigma2/userbouquet.SkyUk.tv
+sleep 2
 
 wget -O /etc/enigma2/userbouquet.SkyDE_ICAM.tv http://movicam-iks.com/enigma2/icam/userbouquet.SkyDE_ICAM.tv && chmod 775 /etc/enigma2/userbouquet.SkyDE_ICAM.tv
 sleep 1
@@ -43,4 +44,29 @@ wget -qO - http://127.0.0.1/web/servicelistreload?mode=2
 
 wget -O /dev/null -q "http://127.0.0.1/api/message?text= مرحباً بكم في العالم الجديد للإينجما ! &type=2&timeout=10&_=1425677186730"
 
-echo " Your Bouqet are updated "
+	MY_RESULT=$?
+
+	echo ''
+	echo ''
+	if [ $MY_RESULT -eq 0 ]; then
+		echo "   >>>>   Your Bouqet are updated   <<<<"
+		echo ''
+		echo "   >>>>         RESTARING         <<<<"
+		if which systemctl > /dev/null 2>&1; then
+			sleep 2; systemctl restart enigma2
+		else
+			init 4; sleep 4; init 3;
+		fi
+	else
+		echo "   >>>>   Update Bouqet Failed !   <<<<"
+	fi;
+	echo ''
+	echo '**************************************************'
+	echo '**                   FINISHED                   **'
+	echo '**************************************************'
+	echo ''
+	exit 0
+else
+	echo ''
+	echo "Update Bouqet failed !"
+	exit 1
