@@ -25,7 +25,8 @@ wget -O /etc/enigma2/userbouquet.MovistarEsp.tv http://movicam-iks.com/enigma2/d
 sleep 1
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.MovistarEsp.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
 
-wget -O /etc/enigma2/userbouquet.SausditaSsc.tv http://movicam-iks.com/enigma2/drm/saudi/userbouquet.SausditaSsc.tv && chmod 775 /etc/enigma2/userbouquet.SausditaSsc.tv
+#wget -O /etc/enigma2/userbouquet.SausditaSsc.tv http://movicam-iks.com/enigma2/drm/saudi/userbouquet.SausditaSsc.tv && chmod 775 /etc/enigma2/userbouquet.SausditaSsc.tv
+wget -O /etc/enigma2/userbouquet.SausditaSsc.tv https://raw.githubusercontent.com/biko-73/Feed/main/userbouquet.SausditaSsc.tv && chmod 775 /etc/enigma2/userbouquet.SausditaSsc.tv
 sleep 1
 echo '#SERVICE 1:7:1:0:0:0:0:0:0:0:FROM BOUQUET "userbouquet.SausditaSsc.tv" ORDER BY bouquet' >> /etc/enigma2/bouquets.tv
 
