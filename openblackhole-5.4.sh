@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# ***************************************************************************************************************
+# wget -q "--no-check-certificate" https://github.com/biko-73/Feed/raw/main/openblackhole-5.4.sh -O - | /bin/sh
+# ***************************************************************************************************************
+
 device=$(head -n 1 /etc/hostname)
 image='openblackhole'
 version='5.4'
