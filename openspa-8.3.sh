@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# ********************************************************************************************************
+# wget -q "--no-check-certificate" https://github.com/biko-73/Feed/raw/main/openspa-8.3.sh -O - | /bin/sh
+# ********************************************************************************************************
+
 #determine image name & url based on device name
 hostname=$(cat /etc/hostname)
 case $hostname in
