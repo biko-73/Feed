@@ -31,7 +31,8 @@ done
 
 sleep 3s
 
-m -rf /etc/ncam* > /dev/null 2>&1
+rm -rf /etc/tuxbox/config/ncam* > /dev/null 2>&1
+rm -rf /etc/tuxbox/config/oscam* > /dev/null 2>&1
 rm -rf /usr/camscript/Ncam* > /dev/null 2>&1
 rm -rf /usr/script/*cam.sh > /dev/null 2>&1
 rm -rf /usr/script/*em.sh > /dev/null 2>&1
