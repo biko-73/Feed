@@ -1,0 +1,101 @@
+	
+	<!-- تقييم الحدث الحالي -->
+	<widget 
+    render="TN_XParental" 
+    source="session.Event_Next" 
+    nextEvent="0" 
+    path="/usr/share/enigma2/RED_DRAGON_FHD/parental/" 
+    position="1609,380" 
+    size="60,60" 
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="10" />
+	
+	
+	<!-- الحدث التالي -->
+	<widget 
+    render="TN_X" 
+    source="session.Event_Next" 
+    type="poster" 
+    nextEvent="1" 
+    position="100,500" 
+    size="130,200" 
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="5" />
+	
+	<!-- الحدث الثالث -->
+	<widget 
+    render="TN_X" 
+    source="session.Event_Next" 
+    type="poster" 
+    nextEvent="2" 
+    position="250,500" 
+    size="130,200" 
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="5" />
+	
+	<!-- الحدث الرابع -->
+	<widget 
+    render="TN_X" 
+    source="session.Event_Next" 
+    type="poster" 
+    nextEvent="3" 
+    position="400,500" 
+    size="130,200" 
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="5" />
+	
+	
+	
+	
+		<!-- الحدث التالي (2) -->
+	<widget 
+    render="TN_X"
+	type="poster"
+    source="session.Event_Next" 
+    nextEvent="2" 
+    position="300,65"
+	zPosition="8"	
+    size="185,278"
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="10" />	
+	<!-- الحدث الثالث (3) -->
+	<widget 
+    render="TN_X"
+	type="poster"	
+    source="session.Event_Next" 
+    nextEvent="3" 
+    position="500,65"
+	zPosition="8"	
+    size="185,278"
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="10" />
+	<!-- الحدث الرابع (4) -->
+	<widget 
+    render="TN_X"
+	type="poster"
+    source="session.Event_Next" 
+    nextEvent="4" 
+    position="700,65"
+	zPosition="8"	
+    size="185,278"
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="10" />
+	<!-- الحدث الخامس (5) -->
+	<widget 
+    render="TN_X"
+	type="poster"
+    source="session.Event_Next" 
+    nextEvent="5" 
+    position="900,65"
+	zPosition="8"	
+    size="185,278"
+    alphatest="blend" 
+    transparent="1" 
+    zPosition="10" />
